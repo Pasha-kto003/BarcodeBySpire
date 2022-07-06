@@ -1,0 +1,22 @@
+﻿<Window x:Class="BarcodeBySpire.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BarcodeBySpire"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+
+        </StackPanel>
+        <Button Grid.Column="1" x:Name="btnBarcode" Click="BtnBarcodeClick" Content="Barcode" HorizontalAlignment="Center" Margin="0 100 0 0" Height="30" Width="200" VerticalAlignment="Center" />
+        <TextBox Grid.Column="1" x:Name="scanBarcode" HorizontalAlignment="Center" Height="30"  Margin="0 200 0 0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="200"/>
+        <TextBox Grid.Column="1" x:Name="txtBarcode" HorizontalAlignment="Center" Height="30"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="200"/>
+        <Image Grid.Column="0" x:Name="pictureBox" HorizontalAlignment="Left" Height="145" VerticalAlignment="Top" Width="300" Margin="86,130,0,0"/>
+    </Grid>
+</Window>
