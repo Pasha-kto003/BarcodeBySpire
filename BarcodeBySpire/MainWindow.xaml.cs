@@ -39,7 +39,11 @@ namespace BarcodeBySpire
             System.Drawing.Image image = generator.GenerateImage();
             pictureBox.Source = ConvertDrawingImageToWPFImage(image);
             string[] textArray = BarcodeScanner.Scan(@"C:\Users\User\source\repos\BarcodeBySpire\BarcodeBySpire\Code39Code.png", BarCodeType.Code39);
-            scanBarcode.Text = textArray.ToString();
+            foreach(string text in textArray)
+            {
+                scanBarcode.Text = text;
+            }
+            
         }
 
         private ImageSource ConvertDrawingImageToWPFImage(System.Drawing.Image gdiImg)
